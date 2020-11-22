@@ -1,0 +1,7 @@
+SQL-запрос, возвращающий имя и число указанных телефонных номеров девушек в возрасте от 18 до 22 лет:
+
+SELECT u.name, (
+    SELECT COUNT(*) FROM 'phone_numbers' pn  WHERE pn.user_id = u.id AND NULLIF(pn.phone, '') IS NOT NULL
+) AS phone_numbers FROM 'users' u WHERE u.gender = 2 
+                                    AND u.brith_date >= UNIX_TIMESTAMP(CURTIME() - INTERVAL 22 YEAR)
+                                    AND u.brith_date <= UNIX_TIMESTAMP(CURTIME() - INTERVAL 18 YEAR);

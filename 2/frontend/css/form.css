@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300;400&display=swap');
+html,body{
+    margin: 0;
+    background-color: #018574;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+#main{
+    width: 30%;
+    position: relative;
+    left: 30%;
+    padding: 2%;
+    height: 80vh;
+    overflow: auto;
+}
+#main > .content header{
+    font-size: 160%;
+    color: white;
+    display: block;
+}
+#main > .content .form{
+    background-color: white;
+    padding: 2%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    height: 250px;
+}
+.form > form div{
+    display: block;
+    margin-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+}
+.form > form div label{
+    display: block;
+    font-size: calc(210% / 3);
+}
+.form > form div select{
+    display: block;
+    width: 90%;
+    font-size: calc(210% / 2);
+    padding: 1%;
+    border-bottom: solid 2px #018574;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form > form div #textput{
+    display: block;
+    width: 90%;
+    font-size: calc(210% / 2);
+    padding: 1%;
+    border-bottom: solid 2px #018574;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form > form div #textput:focus, .form > form div select:focus{
+    border-bottom: solid 2px darkgreen;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.form > form div:nth-child(4){
+    margin-top: 3%;
+    float: right;
+    margin-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.form > form div button{
+    text-align: center;
+    font-size: calc(260% / 3);
+    padding: 11px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+#main > .content .console{
+    background-color: #007BD7;
+    color: #ffffff;
+    padding: 1%;
+    font-size: 90%;
+    height: 100px;
+    overflow: auto;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+#footer{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    padding: 1%;
+    background-color: darkslategray;
+}
+#footer > .content{
+    float: left;
+    margin-left: 2%;
+}
+#footer > .content a{
+    color: white;
+    font-size: 130%;
+}
